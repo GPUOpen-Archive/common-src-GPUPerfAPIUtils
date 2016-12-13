@@ -21,7 +21,7 @@
 #include <string>
 #include <assert.h>
 
-#ifdef GDT_INTERNAL
+#ifdef AMDT_INTERNAL
     #include "GPUPerfAPITypes-Private.h"
     #include "GPUPerfAPIFunctionTypes-Private.h"
 #else

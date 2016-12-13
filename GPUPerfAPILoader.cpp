@@ -141,9 +141,9 @@ bool GPUPerfAPILoader::Load(const char* pDllPath, GPA_API_Type api, const char**
     #define LIB_SUFFIX ".so"
 #endif
 
-#ifndef GDT_PLATFORM_SUFFIX
+#ifndef AMDT_PLATFORM_SUFFIX
     #ifdef PLATFORM_SUFFIX
-        #define GDT_PLATFORM_SUFFIX PLATFORM_SUFFIX
+        #define AMDT_PLATFORM_SUFFIX PLATFORM_SUFFIX
     #endif
 #endif
 
@@ -188,9 +188,9 @@ std::string GPUPerfAPILoader::GetGPADllName(const std::string& dllPath, GPA_API_
             assert("unknown API type");
     }
 
-    dllFullPath.append(GDT_PLATFORM_SUFFIX);
+    dllFullPath.append(AMDT_PLATFORM_SUFFIX);
     dllFullPath.append(LIB_DEBUG_SUFFIX);
-    dllFullPath.append(GDT_BUILD_SUFFIX);
+    dllFullPath.append(AMDT_BUILD_SUFFIX);
     dllFullPath.append(LIB_SUFFIX);
 
     return dllFullPath;
