@@ -184,6 +184,10 @@ std::string GPUPerfAPILoader::GetGPADllName(const std::string& dllPath, GPA_API_
             dllFullPath.append("GPUPerfAPIHSA");
             break;
 
+        case GPA_API_VULKAN:
+            dllFullPath.append("GPUPerfAPIVK");
+            break;
+
         default:
             assert("unknown API type");
     }

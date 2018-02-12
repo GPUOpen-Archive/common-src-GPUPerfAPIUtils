@@ -21,13 +21,8 @@
 #include <string>
 #include <assert.h>
 
-#ifdef AMDT_INTERNAL
-    #include "GPUPerfAPITypes-Private.h"
-    #include "GPUPerfAPIFunctionTypes-Private.h"
-#else
-    #include "GPUPerfAPITypes.h"
-    #include "GPUPerfAPIFunctionTypes.h"
-#endif
+#include "GPUPerfAPITypes.h"
+#include "GPUPerfAPIFunctionTypes.h"
 
 // class to load the GPA at run-time
 // To call a function create an instance of GPUPerfAPILoader and use . notation to access the function as normal
